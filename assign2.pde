@@ -30,11 +30,6 @@ int soldierY=floor(random(2,6))*80;
 float robotX=floor(random(3,8))*80;
 int robotY=floor(random(2,6))*80;
 
-float lightX=robotX+20;
-float lightY=480-80*robotY;
-float lightDistance;
-float lightSpeed;
-
 float cabbageX=floor(random(0,8))*80;
 float cabbageY=floor(random(2,6))*80;
 
@@ -159,8 +154,6 @@ switch(gameState){
         groundhogY=80;
         lifeX=lifeX-70;
         
-        
-        
       }
       
       if(cabbageX<groundhogX+80 && cabbageX+80>groundhogX && cabbageY<groundhogY+80 &&cabbageY+80>groundhogY){
@@ -178,12 +171,7 @@ switch(gameState){
       }
       break;
         
-      
-      
-      
-      
-      
-      
+    
     
     
     case GAME_OVER:
@@ -207,17 +195,10 @@ switch(gameState){
         
       }
 
-
-    
-    
-    
-    
-  
-  
    
       
 }
-
+	
 
 void keyPressed(){
   switch(keyCode){
