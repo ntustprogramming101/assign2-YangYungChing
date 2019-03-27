@@ -27,8 +27,8 @@ int gameState = GAME_START;
 int soldierX=-80;
 int soldierY=floor(random(2,6))*80;
 
-float robotX=random(400)+80;
-int robotY=floor(random(4))+1;
+float robotX=floor(random(3,8))*80;
+int robotY=floor(random(2,6))*80;
 
 float lightX=robotX+20;
 float lightY=480-80*robotY;
@@ -217,11 +217,7 @@ switch(gameState){
    
       
 }
-		// Game Start
 
-		// Game Run
-
-		// Game Lose
 
 void keyPressed(){
   switch(keyCode){
