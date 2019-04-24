@@ -155,7 +155,7 @@ switch(gameState){
         groundhogX=320;
         groundhogY=80;
         lifeX=lifeX-70;
-        
+        movement=STOP;
       }
       
       if(cabbageX<groundhogX+80 && cabbageX+80>groundhogX && cabbageY<groundhogY+80 &&cabbageY+80>groundhogY){
